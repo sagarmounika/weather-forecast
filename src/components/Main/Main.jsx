@@ -13,7 +13,7 @@ const Main = () => {
       {" "}
       {weatherData && (
         <div className="flex flex-1">
-          <div className="w-1/3 border-r border-light-gray px-2">
+          <div className="w-1/3 border-r border-light-gray px-3">
             <TimeAndLocation weather={weatherData} />
             <TemperatureAndDetails weather={weatherData} unit={unit} />
           </div>

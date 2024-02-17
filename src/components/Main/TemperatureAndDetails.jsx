@@ -111,15 +111,14 @@ const TemperatureAndDetails = ({
           </div>
         </div>
       </div>
-
-      <div className="flex flex-row items-center justify-between space-x-2 text-sm py-3">
-        {verticalDetails.map(({id, icon, text, data}) => (
-          <RenderVerticalDetail key={id} icon={icon} text={text} data={data} />
-        ))}
-      </div>
-      <div className="flex  items-center justify-between border border-light-gray rounded-md">
+      <div className="flex  items-center justify-between border border-light-gray rounded-md my-6">
         {horizontalDetails.map(({id, icon, text, data}) => (
           <RenderDetail key={id} icon={icon} text={text} data={data} />
+        ))}
+      </div>
+      <div className="flex flex-row items-center justify-between space-x-2 text-sm my-3">
+        {verticalDetails.map(({id, icon, text, data}) => (
+          <RenderVerticalDetail key={id} icon={icon} text={text} data={data} />
         ))}
       </div>
     </>
