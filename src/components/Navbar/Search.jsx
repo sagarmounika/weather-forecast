@@ -14,11 +14,13 @@ const Search = () => {
   }
   return (
     <div>
-      <div className="flex items-center justify-center">
-        <div className="relative ">
+      <div className="flex items-center justify-center h-full ">
+        <div className="relative h-full">
           <input
             type="text"
-            className="border border-light-gray rounded-md py-2 px-6 pr-10 placeholder-gray-300 focus:outline-none"
+            className="border border-light-gray rounded-md py-2  placeholder-gray-300 focus:outline-none h-full
+            px-6 pr-10 sm:px-2 md:px-2 sm:pr-2 md:pr-4 lg:px-6 lg:pr-10 
+            "
             placeholder="Search for cities"
             onChange={onChangeHandler}
             value={query}

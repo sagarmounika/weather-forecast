@@ -20,7 +20,7 @@ function RenderVerticalDetail(props) {
       <Icon size={35} />
       <div className="text-center">
         <div className="font-medium mt-1 capitalize">{props.text}</div>
-        <div className="text-sm font-normal text-dark-gray">{props.data}</div>
+        <div className="text-xs font-normal text-dark-gray">{props.data}</div>
       </div>
     </div>
   )
@@ -93,10 +93,10 @@ const TemperatureAndDetails = ({
 
   return (
     <>
-      <div className="flex  my-3">
+      <div className="flex  my-3 text-xs md:text-base">
         <div className="flex flex-row items-center justify-center ">
           <img
-            className="w-32  border-light-gray"
+            className="w-24 md:w-32  border-light-gray"
             src={condition_icon}
             alt="///"
           />
@@ -116,7 +116,7 @@ const TemperatureAndDetails = ({
           <RenderDetail key={id} icon={icon} text={text} data={data} />
         ))}
       </div>
-      <div className="flex flex-row items-center justify-between space-x-2 text-sm my-3">
+      <div className="grid grid-cols-4 gap-4  text-sm my-3">
         {verticalDetails.map(({id, icon, text, data}) => (
           <RenderVerticalDetail key={id} icon={icon} text={text} data={data} />
         ))}

@@ -11,7 +11,7 @@ export const fetchWeatherData = createAsyncThunk(
   async (city, {rejectWithValue}) => {
     try {
       const response = await axios.get(
-        `${BASE_URL}/forecast.json?key=${API_KEY}&q=${city}&days=4`
+        `${BASE_URL}/forecast.json?key=${API_KEY}&q=${city}&days=6`
       )
       const formattedWeatherData = getFormattedWeatherData(response.data)
       return formattedWeatherData

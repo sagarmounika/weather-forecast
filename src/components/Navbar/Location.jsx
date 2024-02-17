@@ -15,7 +15,7 @@ const Location = () => {
     }
   }
   return (
-    <div className="border border-light-gray rounded-md mr-2 cursor-pointer py-2 px-4 flex items-center justify-center">
+    <div className="border border-light-gray rounded-md mr-2 cursor-pointer text-xs py-2 px-4  sm:px-2 md:px-2 flex items-center justify-center ">
       <FaLocationCrosshairs
         onClick={handleLocationClick}
         size={20}

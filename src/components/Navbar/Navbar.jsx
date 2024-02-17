@@ -22,12 +22,12 @@ const Navbar = () => {
   }, [dispatch, city])
 
   return (
-    <div className=" border-b border-light-gray ">
-      <div className="flex justify-between items-center w-full py-2 px-3">
-        <div>
+    <div className=" border-b border-light-gray w-full">
+      <div className="flex flex-col md:flex-row items-start sm:items-start md:items-start lg:items-center w-full py-2 px-3 justify-between">
+        <div className="hidden sm:hidden md:hidden lg:block">
           <img alt="logo" src={Logo} width="250" height="250" />
         </div>
-        <div className="flex items-stretch">
+        <div className="flex items-stretch text-xs sm:text-xs md:text-xs  ">
           <Location />
           <Search />
         </div>

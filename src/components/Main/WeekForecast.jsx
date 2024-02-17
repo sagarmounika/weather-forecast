@@ -1,13 +1,16 @@
 import React from "react"
+import {FaCalendarAlt} from "react-icons/fa"
 const Col = ({title, subTitle, unit, type}) => {
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="font-medium">
+      <div className="font-medium mb-2 md:mb-0">
         {title}
         {type === "temp" ? <sup>°{unit === "c" ? "C" : "F"}</sup> : ""}
       </div>
 
-      <div className="text-sm font-normal text-dark-gray ">{subTitle}</div>
+      <div className="text-xs md:text-base lg:text-sm font-normal text-dark-gray ">
+        {subTitle}
+      </div>
     </div>
   )
 }
@@ -16,10 +19,11 @@ const WeekForecast = ({title, unit, forecast}) => {
   return (
     <div className="w-full  mb-3">
       <div className="flex items-center justify-start p-2  border-b  border-light-gray">
-        <div className="font-medium uppercase">{title}</div>
+        <FaCalendarAlt />
+        <div className="font-medium ml-2 uppercase">{title}</div>
       </div>
 
-      <div className="flex flex-col mt-2">
+      <div className="flex flex-col mt-2 ">
         {forecast.map(
           ({
             title,
@@ -37,7 +41,7 @@ const WeekForecast = ({title, unit, forecast}) => {
           }) => (
             <div
               key={Math.random()}
-              className="flex flex-row justify-between items-center border  border-light-gray rounded-md p-2 px-4 mb-2"
+              className="flex flex-row justify-between items-center border  border-light-gray rounded-md p-1 md:p-2 px-2 md:px-4 mb-2"
             >
               <Col title={title} subTitle={sub_title} />
 

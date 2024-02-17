@@ -3,7 +3,7 @@ import React from "react"
 const TimeAndLocation = ({weather: {locDateTime, loc_name, loc_country}}) => {
   return (
     <>
-      <div className="flex items-center justify-start mt-3">
+      <div className="flex items-center justify-start mt-3 text-xs md:text-base">
         <div className="  text-3xl font-medium">{`${loc_name}, ${loc_country}`}</div>
       </div>
       <div className="flex items-center justify-start ">

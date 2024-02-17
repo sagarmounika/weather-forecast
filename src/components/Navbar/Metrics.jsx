@@ -13,7 +13,7 @@ const Metrics = () => {
     dispatch(setUnit(value))
   }
   return (
-    <div className="flex  justify-end">
+    <div className="flex  justify-end w-full md:w-auto mt-2 md:mt-0">
       <label className="themeSwitcherTwo border border-light-gray shadow-card relative inline-flex cursor-pointer select-none items-center justify-center rounded-md bg-white p-1">
         <input
           type="checkbox"

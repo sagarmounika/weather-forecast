@@ -12,8 +12,8 @@ const Main = () => {
     <>
       {" "}
       {weatherData && (
-        <div className="flex flex-1">
-          <div className="w-1/3 border-r border-light-gray px-3">
+        <div className="flex flex-1 flex-col lg:flex-row text-xs md:text-base">
+          <div className="w-full lg:w-1/3 border-r border-light-gray px-3">
             <TimeAndLocation weather={weatherData} />
             <TemperatureAndDetails weather={weatherData} unit={unit} />
           </div>
