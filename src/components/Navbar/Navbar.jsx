@@ -27,7 +27,7 @@ const Navbar = () => {
         <div className="hidden sm:hidden md:hidden lg:block">
           <img alt="logo" src={Logo} width="250" height="250" />
         </div>
-        <div className="flex items-stretch text-xs sm:text-xs md:text-xs  ">
+        <div className="flex items-stretch text-xs sm:text-xs md:text-xs w-2/5 ">
           <Location />
           <Search />
         </div>

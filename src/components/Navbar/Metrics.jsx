@@ -8,9 +8,9 @@ const Metrics = () => {
   const {unit} = useSelector(state => state.searchReducer)
   const [isChecked, setIsChecked] = useState(false)
   const unitHandler = () => {
-    setIsChecked(!isChecked)
     const value = unit === "c" ? "f" : "c"
     dispatch(setUnit(value))
+    setIsChecked(!isChecked)
   }
   return (
     <div className="flex  justify-end w-full md:w-auto mt-2 md:mt-0">
@@ -22,7 +22,7 @@ const Metrics = () => {
           onChange={unitHandler}
         />
         <span
-          className={`flex items-center space-x-[6px] rounded py-2 px-4  text-sm font-medium ${
+          className={`flex items-center  rounded py-2 px-4  text-sm font-medium ${
             !isChecked ? "text-primary bg-[#f4f7ff]" : "text-body-color"
           }`}
         >
