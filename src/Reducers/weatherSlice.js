@@ -3,7 +3,7 @@ import {createAsyncThunk, createSlice} from "@reduxjs/toolkit"
 import axios from "axios"
 import {getFormattedWeatherData} from "../utilities/weatherFormatting"
 
-const API_KEY = "39ebde1d03084fba89494919241602"
+const API_KEY = "0ddcfdbe5ad640668c1122717241702"
 const BASE_URL = "https://api.weatherapi.com/v1"
 
 export const fetchWeatherData = createAsyncThunk(
